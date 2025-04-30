@@ -1,9 +1,17 @@
-#include <iostream>
-#include <cstdlib>
-using namespace std;
+void menuFase2() {
+    int op;
+    do {
+    	system("cls");
+    	cout << "1. Iniciar Programa\n";
+    	cout << "0. Regresar\n";
+        cout << "Seleccione una opcion: ";
+    	  cin >> op;
 
-void menuFase1();
-void menuFase2();
+        switch(op) {
+            case 1: system("start FASE2.exe"); break;
+            case 0: break;
+            default: cout << "Opcion invalida.\n"; system("pause"); break;
+        }
 
-             
-
+    } while(op != 0);
+}
